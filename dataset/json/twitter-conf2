@@ -1,0 +1,22 @@
+input{
+	twitter {
+	    consumer_key => "pB4JrTphO0GSiWceXD7tlmpiP"
+	    consumer_secret => "lhHwzOWbQOS1lPHPRqvWH6qZPqS2cE4EJADifWPxVfmcSHvx8R"
+	    oauth_token => "3104461712-WNNHwJqN0RFlVrBnXtP9vShFJnFYFI7daJiHFa7"
+	    oauth_token_secret => "28MuBkGPvBTKbWiCaXjOqFKMrQwhZc1m4iBUMS4aW78xn"
+	    keywords => ["star"]
+	    languages => ["en"]
+	}
+}
+output{
+	elasticsearch{
+		index => "twitter"
+	}
+	stdout{
+		codec => rubydebug
+	}
+	file{
+		codec=>"json"
+		path => ["/home/ice/下載/logstash-2.2.2/bin/twitterdata.json"]
+	}
+}
