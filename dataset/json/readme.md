@@ -29,5 +29,9 @@ Content
 <h3 id="html">Sorce</h3>
 
 	1. 從哪個API來的: [twitter](https://apps.twitter.com/app/new)
-	2. 內容主題: 關於star
-	3. keyword: star
+	2. 內容主題: 娛樂消息
+	3. keyword: 
+		>twitterdata: star
+		>twitterdata1: music
+		>twitterdata2: movie
+		
